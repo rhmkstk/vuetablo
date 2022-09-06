@@ -1,58 +1,120 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <div>Selam</div>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
-</script>
+// @import url("./styles/_resettable.scss");
+// @mixin theme-colors($light-theme: true) {
+//   @if $light-theme {
+//     --vue-data-table-bg-color: #fff;
+//     --vue-data-table-text-color: #212529;
+//     --vue-data-table-border-color: rgba(0, 0, 0, 0.1);
+//     --vue-data-table-stripe-color: rgba(0, 0, 0, 0.05);
+//     --vue-data-table-shadow-color: rgba(83, 83, 83, 0.4);
+//   } @else {
+//     --vue-data-table-bg-color: #212529;
+//     --vue-data-table-text-color: #fff;
+//     --vue-data-table-border-color: rgba(255, 255, 255, 0.15);
+//     --vue-data-table-stripe-color: #32383e;
+//     --vue-data-table-shadow-color: rgb(92, 92, 92);
+//   }
+// }
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+// .__vue-data-table-container {
+//   &.__vue-data-table-dark {
+//     @include theme-colors($light-theme: false);
+//   }
+//   @include theme-colors($light-theme: true);
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   background: var(--vue-data-table-bg-color);
+//   color: var(--vue-data-table-text-color);
+//   &.__vue-data-table-border {
+//     table {
+//       thead tr {
+//         border-bottom: 1px solid var(--vue-data-table-border-color);
+//       }
+//       tbody tr {
+//         border-bottom: 1px solid var(--vue-data-table-border-color);
+//       }
+//       & + .__vue-data-table-pagination {
+//         border-bottom: 1px solid var(--vue-data-table-border-color);
+//       }
+//     }
+//   }
+//   &.__vue-data-table-border-outside {
+//     border: 1px solid var(--vue-data-table-border-color);
+//     .__vue-data-table-pagination {
+//       border: none !important;
+//     }
+//   }
+//   &.__vue-data-table-stripe {
+//     table tbody tr:nth-child(odd) {
+//       background-color: var(--vue-data-table-stripe-color);
+//     }
+//   }
+//   &.__vue-data-table-hover {
+//     table tbody tr:hover {
+//       background-color: var(--vue-data-table-stripe-color);
+//     }
+//   }
+//   &.__vue-data-table-large {
+//     table {
+//       thead tr th {
+//         padding: 18px 0px;
+//       }
+//       tbody tr td {
+//         padding: 18px 0px;
+//       }
+//     }
+//   }
+//   &.__vue-data-table-small {
+//     table {
+//       thead tr th {
+//         padding: 8px 4px;
+//       }
+//       tbody tr td {
+//         padding: 8px 4px;
+//       }
+//     }
+//   }
+//   &.__vue-data-table-radius {
+//     border-radius: 6px;
+//     tbody tr:last-child {
+//       border: none !important;
+//     }
+//   }
+//   &.__vue-data-table-radius-lg {
+//     border-radius: 14px;
+//     tbody tr:last-child {
+//       border: none !important;
+//     }
+//   }
+//   &.__vue-data-table-shadow {
+//     box-shadow: 2px 2px 6px -1px var(--vue-data-table-shadow-color);
+//   }
+//   &.__vue-data-table-align-left table {
+//     text-align: left;
+//   }
+//   &.__vue-data-table-align-right table {
+//     text-align: right;
+//   }
+//   table {
+//     border-radius: 14px;
+//     thead {
+//       tr {
+//         font-weight: bold;
+//         th {
+//           padding: 13px 0px;
+//         }
+//       }
+//     }
+//     tbody tr td {
+//       padding: 13px 0px;
+//     }
+//   }
+//   .__vue-data-table-search,
+//   .__vue-data-table-pagination {
+//     display: flex;
+//     align-items: center;
+//   }
+// }
